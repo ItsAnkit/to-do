@@ -1,0 +1,25 @@
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+<div class = 'container'>
+  <%= render 'form' %>
+  <div class="tracker-container">
+    <h1> Track Issues </h3>
+    <ul class="list-container">
+      <% @issues.each_with_index do |(state, issues), index| %>
+        <li class="list col-md-3">
+          <h3 class="issue-state"><%= state %></h3>
+          <div class = 'partition'></div>
+          <% issues.each do |issue| %>
+            <div class="issue-title" draggable="true">
+              <div class = 'issue-id hidden'>
+                <%= issue.id %>
+              </div>
+              <%= issue.description %>
+            </div>
+          <% end %>
+        </li>
+      <% end %>
+    </ul>
+  </div>
+</div>

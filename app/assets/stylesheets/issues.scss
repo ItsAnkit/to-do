@@ -1,0 +1,89 @@
+// Place all the styles related to the issues controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+.tracker-container {
+  height: 100%;
+  margin-left: 30%;
+  overflow-x: scroll;
+  width: auto;
+  white-space: nowrap;
+}
+
+body {
+  background-image: image_url('background.jpeg');
+}
+
+.list {
+  display: inline-block;
+  border: 1px solid black;
+  background-color: #9FD6CD;
+  max-width: 250px;
+  min-height: 200px;
+  max-height: 250px;
+  border-radius: 1%;
+  vertical-align: baseline;
+  overflow: auto;
+}
+
+.list-container li {
+  list-style-type: circle;
+  display: inline-block;
+  overflow: auto;
+  width: 40%;
+  margin: 10px 5px 5px 5px;
+}
+
+.issue-title {
+  margin: 10px 10px 10px 20px;
+  fony-size: 12px;
+}
+
+.issue-state {
+  margin-left: 10px;
+}
+
+.hidden {
+  display: none;
+}
+
+.creator-container {
+  height: 100%;
+  width: 25%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #efe;
+  overflow-x: hidden;
+  padding-top: 20px;
+  background-image: image_url('sidenav.jpeg');
+}
+
+.submit-btn {
+  margin-left: 130px;
+  margin-top: 30px;
+  font-size: 100px;
+}
+
+.form-table td {
+  height: 50px;
+}
+
+.partition {
+  border: 1px solid white;
+  width: auto;
+}
+
+#state, label {
+  height: 20px;
+  width: 80%;
+}
+
+#description {
+  height: 40px;
+  width: 80%;
+}
+
+
