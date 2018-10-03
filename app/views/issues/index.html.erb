@@ -11,11 +11,13 @@
           <h3 class="issue-state"><%= state %></h3>
           <div class = 'partition'></div>
           <% issues.each do |issue| %>
-            <div class="issue-title" draggable="true">
-              <div class = 'issue-id hidden'>
-                <%= issue.id %>
+            <div class = 'box'>
+              <div class="issue-title" draggable="true">
+                <div class = 'issue-id hidden'>
+                  <%= issue.id %>
+                </div>
+                <%= issue.description %>
               </div>
-              <%= issue.description %>
             </div>
           <% end %>
         </li>

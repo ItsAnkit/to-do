@@ -6,9 +6,6 @@
 .tracker-container {
   height: 100%;
   margin-left: 30%;
-  overflow-x: scroll;
-  width: auto;
-  white-space: nowrap;
 }
 
 body {
@@ -20,7 +17,7 @@ body {
   border: 1px solid black;
   background-color: #9FD6CD;
   max-width: 250px;
-  min-height: 200px;
+  height: 400px;
   max-height: 250px;
   border-radius: 1%;
   vertical-align: baseline;
@@ -28,11 +25,21 @@ body {
 }
 
 .list-container li {
-  list-style-type: circle;
   display: inline-block;
   overflow: auto;
   width: 40%;
   margin: 10px 5px 5px 5px;
+}
+
+.box {
+  border: 1px solid black;
+  margin-top: 5px;
+}
+
+.list-container {
+  overflow-x: scroll;
+  width: auto;
+  white-space: nowrap;
 }
 
 .issue-title {

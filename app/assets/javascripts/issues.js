@@ -6,7 +6,7 @@ $(document).ready(function () {
       connectWith: ".list-container li",
       receive: function(event, ui) {
         var params = {};
-        params['id'] = $(ui.item.context.firstElementChild).text().trim();
+        params['id'] = $(ui.item.context.firstElementChild).find('.issue-id').text().trim()
         params['state'] = $(this).find('.issue-state').text();
         updateIssueState(params);
       }
